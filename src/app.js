@@ -7,7 +7,8 @@ const resolvers = require('./resolvers');
 require('./dbconfig.js');
 
 const server = new ApolloServer({
-  typeDefs,
+	cors: true,
+	typeDefs,
   resolvers
 });
 
