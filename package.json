@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec \"heroku local\" --signal SIGTERM"
+		"start": "nodemon --exec \"heroku local\" --signal SIGTERM",
+		"migrate:up": "migrate-mongo up",
+		"migrate:down": "migrate-mongo down",
+		"heroku-postbuild": "migrate-mongo up"
   },
   "dependencies": {
     "apollo-server-express": "^2.19.1",
