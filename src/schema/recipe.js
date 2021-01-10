@@ -11,6 +11,7 @@ const schemas = gql`
 	extend type Mutation {
 		addRecipe(
 			name: String!
+			author: String!
 			category: [String]!
 			ingredients: String!
 			directions: String!
@@ -26,6 +27,7 @@ const schemas = gql`
 	type Recipe {
 		id: ID!
 		name: String!
+		author: String!
 		category: [String]!
 		ingredients: String!
 		directions: String!
