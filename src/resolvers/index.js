@@ -1,3 +1,4 @@
 const recipeResolvers = require('./recipe');
+const categoryResolvers = require('./category')
 
-module.exports = [recipeResolvers];
+module.exports = [recipeResolvers, categoryResolvers];

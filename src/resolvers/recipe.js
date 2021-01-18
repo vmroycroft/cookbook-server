@@ -5,7 +5,7 @@ module.exports = {
 		recipes: async (_) => await Recipe.find()
 	},
 	Mutation: {
-		addRecipe: async (_, { name, category, ingredients, directions, author }) => {
+		addRecipe: async (_, { name, author, category, ingredients, directions }) => {
 			try {
 				const doc = await Recipe.create({
 					name,

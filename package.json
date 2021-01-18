@@ -6,12 +6,13 @@
     "start": "nodemon --exec \"heroku local\" --signal SIGTERM",
     "migrate:up": "npx migrate-mongo up",
     "migrate:down": "npx migrate-mongo down",
-		"heroku-postbuild": "npm run migrate:up"
+    "heroku-postbuild": "npm run migrate:up"
   },
   "dependencies": {
     "apollo-server-express": "^2.19.1",
     "dotenv": "^8.2.0",
     "graphql": "^15.4.0",
+    "lodash": "^4.17.20",
     "mongoose": "^5.11.11",
     "nodemon": "^2.0.7"
   }

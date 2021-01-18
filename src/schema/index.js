@@ -1,5 +1,6 @@
 const { gql } = require('apollo-server-express');
 const recipeSchema = require('./recipe');
+const categorySchema = require('./category');
 
 const linkSchema = gql`
 	type Query {
@@ -10,4 +11,4 @@ const linkSchema = gql`
 	}
 `;
 
-module.exports = [linkSchema, recipeSchema];
+module.exports = [linkSchema, recipeSchema, categorySchema];
